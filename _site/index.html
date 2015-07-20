@@ -72,12 +72,10 @@
 				<li>
 					<img src="/images/avatar.jpg" alt="Vimiumist photo" class="author-photo">
 					<h4>Vimiumist</h4>
-					<p>Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice.</p>
+					<p>...</p>
 				</li>
 				<li><a href="/about/"><span class="btn btn-inverse">Learn More</span></a></li>
-				<li>
-					<a href="mailto:you@email.com"><i class="fa fa-fw fa-envelope"></i> Email</a>
-				</li>
+				
 				
 				
 				
@@ -97,16 +95,6 @@
 			</ul>
 		</li>
 		
-	    
-	        
-	    
-	    <li><a href="/theme-setup/" >Theme Setup</a></li>
-	  
-	    
-	        
-	        
-	    <li><a href="http://mademistakes.com" target="_blank">External Link</a></li>
-	  
 	</ul><!-- /.dl-menu -->
 </nav><!-- /.dl-menuwrapper -->
 
@@ -132,7 +120,7 @@
   <header>
     
       <div class="entry-image-index">
-        <a href="/sample-post/" title="Sample Post"><img src="/images/abstract-3.jpg" alt="Sample Post"></a>
+        <a href="/sample-post/" title="Cell-based NSTableView 到 vell-based NSTableview 转换的一点经验"><img src="/images/abstract-3.jpg" alt="Cell-based NSTableView 到 vell-based NSTableview 转换的一点经验"></a>
       </div><!-- /.entry-image -->
     
     <div class="entry-meta">
@@ -141,16 +129,16 @@
       <span class="entry-reading-time">
         <i class="fa fa-clock-o"></i>
         
-        Reading time ~2 minutes
+        Reading time ~1 minute
       </span><!-- /.entry-reading-time -->
       
     </div><!-- /.entry-meta -->
     
-      <h1 class="entry-title"><a href="/sample-post/" rel="bookmark" title="Sample Post" itemprop="url">Sample Post</a></h1>
+      <h1 class="entry-title"><a href="/sample-post/" rel="bookmark" title="Cell-based NSTableView 到 vell-based NSTableview 转换的一点经验" itemprop="url">Cell-based NSTableView 到 vell-based NSTableview 转换的一点经验</a></h1>
     
   </header>
   <div class="entry-content">
-    <p>Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.</p>
+    <p>在去年WWDC上，苹果在<a href="https://developer.apple.com/videos/wwdc/2014/">What’s New in Cocoa</a> section中正式deprecate cell-based NSTableView。虽然之前已经预料到早晚有这么一天，但是我们一直都没有将我们已有的cell-based table view转换为view-based。原因很简单，因为工作量太大了 － 我工作所在团队负责的产品是一个千万行代码级别的Mac软件，该软件有上百个对话框，约70个NSTableview/NSOutlineView。这些table view大都是在10.5～10.6时期写的，不少table view还被高度customized。在cell-based table view的年代，为了在一个table cell里面塞进去一个复杂点的空间，需要实现一个复杂的包含若干child cell的NSCell。</p>
 
 <h1 id="heading-1">Heading 1</h1>
 
@@ -262,18 +250,6 @@
     &lt;p&gt;This is great isn't it?&lt;/p&gt;
 &lt;/div&gt;
 </code></pre>
-
-<h2 id="buttons">Buttons</h2>
-
-<p>Make any link standout more when applying the <code>.btn</code> class.</p>
-
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-success&quot;</span><span class="nt">&gt;</span>Success Button<span class="nt">&lt;/a&gt;</span></code></pre></div>
-
-<div><a href="#" class="btn">Primary Button</a></div>
-<div><a href="#" class="btn btn-success">Success Button</a></div>
-<div><a href="#" class="btn btn-warning">Warning Button</a></div>
-<div><a href="#" class="btn btn-danger">Danger Button</a></div>
-<div><a href="#" class="btn btn-info">Info Button</a></div>
 
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->

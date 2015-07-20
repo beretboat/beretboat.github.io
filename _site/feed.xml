@@ -4,17 +4,17 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2015-04-11T00:37:27+08:00</updated>
+<updated>2015-04-11T13:45:59+08:00</updated>
 <id>/</id>
 <author>
   <name>Vimiumist</name>
   <uri>/</uri>
-  <email>you@email.com</email>
+  
 </author>
 
 
 <entry>
-  <title type="html"><![CDATA[Sample Post]]></title>
+  <title type="html"><![CDATA[Cell-based NSTableView 到 vell-based NSTableview 转换的一点经验]]></title>
  <link rel="alternate" type="text/html" href="/sample-post/" />
   <id>/sample-post</id>
   <updated>2014-12-24T00:00:00-00:00</updated>
@@ -23,10 +23,10 @@
   <author>
     <name>Vimiumist</name>
     <uri></uri>
-    <email>you@email.com</email>
+    <email></email>
   </author>
   <content type="html">
-    &lt;p&gt;Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.&lt;/p&gt;
+    &lt;p&gt;在去年WWDC上，苹果在&lt;a href=&quot;https://developer.apple.com/videos/wwdc/2014/&quot;&gt;What’s New in Cocoa&lt;/a&gt; section中正式deprecate cell-based NSTableView。虽然之前已经预料到早晚有这么一天，但是我们一直都没有将我们已有的cell-based table view转换为view-based。原因很简单，因为工作量太大了 － 我工作所在团队负责的产品是一个千万行代码级别的Mac软件，该软件有上百个对话框，约70个NSTableview/NSOutlineView。这些table view大都是在10.5～10.6时期写的，不少table view还被高度customized。在cell-based table view的年代，为了在一个table cell里面塞进去一个复杂点的空间，需要实现一个复杂的包含若干child cell的NSCell。&lt;/p&gt;
 
 &lt;h1 id=&quot;heading-1&quot;&gt;Heading 1&lt;/h1&gt;
 
@@ -139,19 +139,7 @@
 &amp;lt;/div&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&quot;buttons&quot;&gt;Buttons&lt;/h2&gt;
-
-&lt;p&gt;Make any link standout more when applying the &lt;code&gt;.btn&lt;/code&gt; class.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn btn-success&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Success Button&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Primary Button&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-success&quot;&gt;Success Button&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-warning&quot;&gt;Warning Button&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-danger&quot;&gt;Danger Button&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-info&quot;&gt;Info Button&lt;/a&gt;&lt;/div&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/sample-post/&quot;&gt;Sample Post&lt;/a&gt; was originally published by Vimiumist at &lt;a href=&quot;&quot;&gt;Vimiumist's blog&lt;/a&gt; on March 10, 2011.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/sample-post/&quot;&gt;Cell-based NSTableView 到 vell-based NSTableview 转换的一点经验&lt;/a&gt; was originally published by Vimiumist at &lt;a href=&quot;&quot;&gt;Vimiumist's blog&lt;/a&gt; on March 10, 2011.&lt;/p&gt;
   </content>
 </entry>
 
