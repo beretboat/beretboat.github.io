@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Cell-based NSTableView 到 view-based NSTableview 转换的一点经验
-description: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
+description: ""
 modified: 2015-07-21
-tags: [sample post]
+tags: [Cocoa NSTableView objc]
 image:
   feature: abstract-3.jpg
   credit: dargadgetz
